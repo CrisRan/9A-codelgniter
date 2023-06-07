@@ -7,7 +7,7 @@ class Welcome extends CI_Controller {
 	{
 		$this->load->view('welcome_message');
 	}
-	public function bienvenido(){
-		$this->load->view('bienvenida_view');
+	public function bienvenida(){
+		$this->load->view('/Productos/bienvenida_view');
 	}
 }
