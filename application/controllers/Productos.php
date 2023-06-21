@@ -34,4 +34,9 @@ class Productos extends CI_Controller
     $this->MuebleriaModel->addCategoria($valores);
     redirect(base_url('./index.php/Productos/listaCategorias'));
   }
+  public function eliminarCategoria() {
+    $id = $this->uri->segment(2);
+    $this->MuebleriaModel->lessCategoria($id);
+    redirect(base_url('./index.php/Productos/listaCategorias'));
+  }
 }

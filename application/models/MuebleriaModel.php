@@ -19,5 +19,9 @@ class MuebleriaModel extends CI_Model {
     public function addCategoria($valores){
         $this->db->insert('categorias', $valores);
     }
+    public function lessCategoria($id){
+        $this->db->where('id', $id);
+        $this->db->delete('categorias');
+    }
 
 }
