@@ -39,4 +39,13 @@ class Productos extends CI_Controller
     $this->MuebleriaModel->lessCategoria($id);
     redirect(base_url('./index.php/Productos/listaCategorias'));
   }
+  public function actualizarCategoria() {
+    $id = $this->uri->segment(2);
+    $categoria = $this->MuebleriaModel->getCategorias($id);
+    $categoria = ($categoria != false) ? $categoria->row(0) : false;
+    $data = array(
+      'categoria' => $categoria
+    );
+    $this->load->view("/Productos/actualizar_categoria_view", $data);
+  }
 }

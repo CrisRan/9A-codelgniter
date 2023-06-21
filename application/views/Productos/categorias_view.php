@@ -26,7 +26,7 @@
                             <td><?= $categoria->nombre ?></td>
                             <td><?= ($categoria->activo == 1) ? 'Activo' :'Inactivo' ?></td>
                             <td> 
-                                <a href="/Productos/actualizarCategorias/">Actualizar</a> 
+                                <a href="<?= base_url('index.php/actualizar_categoria/'.$categoria->id) ?>">Actualizar</a> 
                                 <a href="<?= base_url('index.php/eliminar_categoria/'.$categoria->id) ?>">Eliminar</a> 
                             </td>
                         </tr>

@@ -8,7 +8,8 @@ class MuebleriaModel extends CI_Model {
         $this->load->database();
     }
 
-    public function getCategorias(){
+    public function getCategorias($id = false){
+        if($id != false) $this->db->where('id', $id);
         $resultado = $this->db->get('categorias');
         if($resultado->num_rows() > 0 )
             return $resultado;
@@ -22,6 +23,10 @@ class MuebleriaModel extends CI_Model {
     public function lessCategoria($id){
         $this->db->where('id', $id);
         $this->db->delete('categorias');
+    }
+    public function updateCategoria($id, $data){
+        $this->db->where('id', $id);
+        $this->db->delete('categorias', $data);
     }
 
 }
