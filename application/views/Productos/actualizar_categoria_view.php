@@ -6,7 +6,7 @@
     <title>Modificar Categoria</title>
 </head>
 <body>
-    <form action="./insertarCategoria" method="post">
+    <form action="../Productos/actualizarCategoria/<?=$categoria->id?>" method="post">
         <label for="">Nombre de la Categoria</label>
         <input type="text" name="nombre" id="nombre" placehoder="nombre" value="<?=$categoria->nombre?>">
         <label for="">Status</label>

@@ -26,7 +26,7 @@ class MuebleriaModel extends CI_Model {
     }
     public function updateCategoria($id, $data){
         $this->db->where('id', $id);
-        $this->db->delete('categorias', $data);
+        $this->db->update('categorias', $data);
     }
 
 }

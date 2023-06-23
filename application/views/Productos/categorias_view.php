@@ -7,6 +7,7 @@
 </head>
 <body>
     <h2>Categorias</h2>
+    <a href="<?= base_url('index.php/Productos/insertar_categoria') ?>">Insertar</a>
     <table border>
         <thead>
             <th>No.</th>
