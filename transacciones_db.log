@@ -4,3 +4,22 @@ GRANT SELECT, INSERT, UPDATE, DELETE ON `muebleria`.* TO 'muebleria_user'@'local
 
 Carpeta Rest
 https://www.google.com/url?sa=j&url=https%3A%2F%2Fwww.itsolutionstuff.com%2Fupload%2Fcodeigniter-api.zip&uct=1683648407&usg=ClMQ7IF5v4HriKOHWpGYHxcdE7A.&source=meet
+
+URL API Rest
+GET
+http://localhost/proyectos/9A-codelgniter/index.php/Api/Categorias
+http://localhost/proyectos/9A-codelgniter/index.php/Api/Categorias/1
+
+
+POST
+http://localhost/proyectos/9A-codelgniter/index.php/Api/Categorias 
+    FORM-DATA
+        nombre:Nueva Categoria REST 2
+        activo:1
+        fecha:2023-06-20 18:29:13
+    JSON
+        {
+            "nombre": "Jardines Actualizado",
+            "fecha": "2023-06-21 17:38:15",
+            "activo": "1"
+        }       
